@@ -9,21 +9,18 @@
         to_base {
             bindings = <&to 0>;
             key-positions = <0 1 2>;
-            layers = <0>;
             timeout-ms = <100>;
         };
 
         to_media {
             bindings = <&to 1>;
             key-positions = <3 4 5>;
-            layers = <1>;
             timeout-ms = <100>;
         };
 
         to_bt {
             bindings = <&to 2>;
             key-positions = <6 7 8>;
-            layers = <2>;
             timeout-ms = <100>;
         };
 
@@ -36,15 +33,14 @@
         bootloader {
             bindings = <&bootloader>;
             key-positions = <8 9>;
-            timeout-ms = <200>;
+            timeout-ms = <300>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
-            display-name = "Base";
+        default_layer {
             bindings = <
 &kp N1  &kp N2  &kp N3
 &kp N4  &kp N5  &kp N6
